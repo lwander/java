@@ -11,7 +11,7 @@
     <connection>scm:git:git@github.com:lwander/java.git</connection>
     <developerConnection>scm:git:git@github.com:lwander/java.git</developerConnection>
     <url>https://github.com/kubernetes-client/java</url>
-    <tag>client-java-1.0</tag>
+    <tag>release-1.0</tag>
   </scm>
   <prerequisites>
     <maven>2.2.0</maven>
