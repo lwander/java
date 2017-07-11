@@ -4,14 +4,14 @@
   <artifactId>client-java</artifactId>
   <packaging>jar</packaging>
   <name>client-java</name>
-  <version>1.1</version>
+  <version>1.3-SNAPSHOT</version>
   <url>https://github.com/swagger-api/swagger-codegen</url>
   <description>Swagger Java</description>
   <scm>
-    <connection>scm:git:git@github.com:kubernetes-client/java.git</connection>
-    <developerConnection>scm:git:git@github.com:kubernetes-client/java.git</developerConnection>
-    <url>https://github.com/kubernetes-client/java</url>
-    <tag>client-java-1.1</tag>
+    <connection>scm:git:git@github.com:lwander/java.git</connection>
+    <developerConnection>scm:git:git@github.com:lwander/java.git</developerConnection>
+    <url>https://github.com/lwander/java</url>
+    <tag>client-java-1.3</tag>
   </scm>
   <prerequisites>
     <maven>2.2.0</maven>
@@ -170,6 +170,16 @@
   </build>
 
   <profiles>
+    <profile>
+      <id>disable-java8-doclint</id>
+      <activation>
+        <jdk>[1.8,)</jdk>
+      </activation>
+      <properties>
+        <additionalparam>-Xdoclint:none</additionalparam>
+      </properties>
+</profile>
+
     <profile>
       <id>sign-artifacts</id>
       <build>
