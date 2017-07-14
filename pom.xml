@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>client</artifactId>
 	<groupId>io.kubernetes</groupId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
   <name>Kubernetes Client API</name>
 
@@ -16,7 +16,7 @@
     <connection>scm:git:git@github.com:lwander/java.git</connection>
     <developerConnection>scm:git:git@github.com:lwander/java.git</developerConnection>
     <url>https://github.com/lwander/java</url>
-    <tag>client-1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <prerequisites>
