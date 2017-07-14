@@ -15,9 +15,9 @@
 	</modules>
 
   <scm>
-    <connection>scm:git:git@github.com:swagger-api/swagger-codegen.git</connection>
-    <developerConnection>scm:git:git@github.com:swagger-api/swagger-codegen.git</developerConnection>
-    <url>https://github.com/swagger-api/swagger-codegen</url>
+    <connection>scm:git:git@github.com:lwander/java.git</connection>
+    <developerConnection>scm:git:git@github.com:lwander/java.git</developerConnection>
+    <url>https://github.com/lwander/java</url>
   </scm>
 
   <prerequisites>
