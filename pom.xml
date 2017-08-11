@@ -9,15 +9,15 @@
   <name>Kubernetes Client API</name>
 
   <modules>
-    <module>kubernetes</module>
     <module>examples</module>
+    <module>kubernetes</module>
     <module>util</module>
   </modules>
 
   <scm>
-    <connection>scm:git:git@github.com:kubernetes-client/java.git</connection>
-    <developerConnection>scm:git:git@github.com:kubernetes-client/java.git</developerConnection>
-    <url>https://github.com/kubernetes-client/java</url>
+    <connection>scm:git:git@github.com:lwander/java.git</connection>
+    <developerConnection>scm:git:git@github.com:lwander/java.git</developerConnection>
+    <url>https://github.com/lwander/java</url>
   </scm>
 
   <prerequisites>
@@ -45,10 +45,12 @@
     <snapshotRepository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <layout>default</layout>
     </snapshotRepository>
     <repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <layout>default</layout>
     </repository>
   </distributionManagement>
 
@@ -60,7 +62,7 @@
         <version>2.5.3</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
-          <releaseProfiles>release</releaseProfiles>
+          <releaseProfiles>release-sign-artifacts</releaseProfiles>
           <goals>deploy</goals>
         </configuration>
       </plugin>
@@ -69,12 +71,6 @@
   <profiles>
     <profile>
       <id>release-sign-artifacts</id>
-      <activation>
-        <property>
-          <name>release</name>
-          <value>true</value>
-        </property>
-      </activation>
       <build>
         <plugins>
           <plugin>
